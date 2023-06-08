@@ -1,11 +1,3 @@
-// Copyright © 2018 Inanc Gumus
-// Learn Go Programming Course
-// License: https://creativecommons.org/licenses/by-nc-sa/4.0/
-//
-// For more tutorials  : https://learngoprogramming.com
-// In-person training  : https://www.linkedin.com/in/inancgumus/
-// Follow me on twitter: https://twitter.com/inancgumus
-
 package main
 
 import "fmt"
@@ -21,15 +13,11 @@ import "fmt"
 // ---------------------------------------------------------
 
 func main() {
-	// HINT: This is a valid constant declaration
-	//       Blank-Identifier can be used in place of a name
 	const _ = iota
-	//    ^- this is just a name
-
 	// Now, use iota and initialize the following constants
 	// "automatically" to 1, 2, and 3 respectively.
 	const (
-		Jan = iota
+		Jan = 1 + iota
 		Feb
 		Mar
 	)

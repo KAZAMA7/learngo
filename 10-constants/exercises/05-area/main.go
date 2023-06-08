@@ -1,12 +1,6 @@
-// Copyright © 2018 Inanc Gumus
-// Learn Go Programming Course
-// License: https://creativecommons.org/licenses/by-nc-sa/4.0/
-//
-// For more tutorials  : https://learngoprogramming.com
-// In-person training  : https://www.linkedin.com/in/inancgumus/
-// Follow me on twitter: https://twitter.com/inancgumus
-
 package main
+
+import "fmt"
 
 // ---------------------------------------------------------
 // EXERCISE: Area
@@ -21,10 +15,10 @@ package main
 // ---------------------------------------------------------
 
 func main() {
-	// const (
-	// 	width  int16 = 25
-	// 	height int32 = width * 2
-	// )
+	const (
+		width  int16 = 25
+		height int32 = int32(width) * 2
+	)
 
-	// fmt.Printf("area = %d\n", width*height)
+	fmt.Printf("area = %d\n", int32(width)*height)
 }
