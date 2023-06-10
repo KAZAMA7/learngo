@@ -1,12 +1,9 @@
-// Copyright © 2018 Inanc Gumus
-// Learn Go Programming Course
-// License: https://creativecommons.org/licenses/by-nc-sa/4.0/
-//
-// For more tutorials  : https://learngoprogramming.com
-// In-person training  : https://www.linkedin.com/in/inancgumus/
-// Follow me on twitter: https://twitter.com/inancgumus
-
 package main
+
+import (
+	"fmt"
+	"os"
+)
 
 // ---------------------------------------------------------
 // EXERCISE: Print Your Fullname
@@ -22,5 +19,7 @@ package main
 // ---------------------------------------------------------
 
 func main() {
-	// BONUS: Use a variable for the format specifier
+	firstName := os.Args[1]
+	lastName := os.Args[2]
+	fmt.Printf("Your name is %s and your lastname is %s.", firstName, lastName)
 }
